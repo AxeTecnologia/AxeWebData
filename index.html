@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="data:,">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Tableau Embedding API Tutorial</title>
+    <!-- Styling -->
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        #header {
+            background-color: rgb(55, 69, 66);
+            color: white;
+            padding: 10px;
+        }
+
+        #sidebar {
+            background-color: rgb(55, 69, 66);
+            color: white;
+            padding: 10px;
+            height: 100%;
+            /* Adicionado para que a sidebar ocupe a altura total */
+        }
+
+        #content {
+            padding: 10px;
+        }
+        .header-image {
+            max-height: 40px; /* Ajuste a altura máxima da imagem como desejado */
+            margin-right: 10px; /* Adicionado espaço entre a imagem e os botões */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Navigation Header -->
+    <div id="header">
+        <!-- Conteúdo do header aqui -->
+        <img src="https://axetecnologia.com.br/wp-content/uploads/2019/12/Logo-Axe-1-1024x242-1.png" alt="Logo" class="header-image"> <!-- Substitua "caminho_da_imagem.png" pelo caminho correto da imagem -->
+        <ul id="nav" class="nav nav-tabs"></ul>
+        <button id="webAuthoringToggle" type="button" class="btn btn-primary btn-sm">Web Authoring</button>
+    </div>
+    <div class="container-fluid" style="height: calc(100% - 52px);">
+        <!-- Subtrai a altura do header para ajustar a altura do conteúdo -->
+        <div class="row" style="height: 100%;"> <!-- Define a altura total da row -->
+            <!-- Barra lateral -->
+            <div id="sidebar" class="col-md-1">
+                <!-- Conteúdo da barra lateral aqui -->
+                <div id="sidebar-content">
+                    <h3>Sidebar</h3>
+                    <p>Conteúdo da barra lateral</p>
+                </div>
+            </div>
+            <!-- Body -->
+            <div id="content" class="col-md-11">
+                <!-- Conteúdo central aqui -->
+                <div id="tableauViz"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
