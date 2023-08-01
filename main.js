@@ -10,20 +10,20 @@ import {
 let details = {
     dashboards: [
         {
-            title: 'Global Temperatures',
+            title: 'Temperatura Global',
             url: 'https://prod-useast-b.online.tableau.com/#/site/axetecnologialtda/views/TesteDashWebAPIEmbebbed/GlobalTemperatures'
         },
         {
-            title: 'Customers Superstore',
+            title: 'Clientes Superloja',
             url: 'https://prod-useast-b.online.tableau.com/#/site/axetecnologialtda/views/Superstore/Customers'
         },
         {
-            title: 'Obesity',
-            url: 'https://prod-useast-b.online.tableau.com/#/site/axetecnologialtda/redirect_to_view/5723588'
+            title: 'Produto Superloja',
+            url: 'https://prod-useast-b.online.tableau.com/#/site/axetecnologialtda/views/Superstore/Product?:iid=7'
         },
         {
-            title: 'Performance Superstore',
-            url: 'https://prod-useast-b.online.tableau.com/#/site/axetecnologialtda/redirect_to_view/165212'
+            title: 'Performance Superloja',
+            url: 'https://prod-useast-b.online.tableau.com/#/site/axetecnologialtda/views/Superstore/Performance?:iid=3'
         },
     ],
     currentDashboardIndex: 0,
@@ -173,7 +173,4 @@ function init() {
     // Atualize o HTML para mostrar a diferença entre criação na Web e somente visualização
     renderButton(button);
 }
-
-
-
 init();
